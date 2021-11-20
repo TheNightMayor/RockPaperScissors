@@ -30,13 +30,13 @@ function playRound() {
 
 function matchResults() {
     return (wins === 3) 
-    ? 'You have won this match!'
+    ? `You have won this match!` 
     : (losses === 3) 
-    ? 'You have lost this match!'
-    : 'Let\'s go again!';
+    ? `You have lost this match!`
+    : `Let's go again!`;
 }
 
 for (; (wins < 3 && losses < 3);) {
     console.log(playRound());
-    console.log(matchResults())
-}
+    console.log(matchResults());
+    }
